@@ -1,3 +1,12 @@
+---
+title: Real Crystyl Translator
+emoji: 💬
+colorFrom: blue
+colorTo: yellow
+sdk: static
+pinned: false
+---
+
 # Crystyl Translator
 
 Crystyl Translator is a tiny, mobile-first Progressive Web App that helps with casual text-message translation between English and everyday Mexican Spanish. It was built as a personal “love-letter translator” for Crystyl, with automatic language detection, one-tap copying, a blue-and-gold sparkle theme, and a rotating encouragement quote every time the app opens.
