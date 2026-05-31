@@ -10,7 +10,24 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to Hugging Face Space
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install huggingface_hub
+        run: pip install huggingface_hub
+      - name: Upload to HF Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add space https://BatmanRecruiter:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/BatmanRecruiter/real-crystyl-translator
-          git push space main --force
+          python -c "
+          from huggingface_hub import HfApi
+          import os
+          api = HfApi(token=os.environ['HF_TOKEN'])
+          api.upload_folder(
+              folder_path='.',
+              repo_id='BatmanRecruiter/real-crystyl-translator',
+              repo_type='space',
+              ignore_patterns=['.git','**/.git/**','.github','**/.github/**']
+          )
+          print('Deployed successfully')
+          "
