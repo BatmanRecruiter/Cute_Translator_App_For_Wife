@@ -1,17 +1,8 @@
----
-title: Real Crystyl Translator
-emoji: 💬
-colorFrom: blue
-colorTo: yellow
-sdk: static
-pinned: false
----
-
 # Crystyl Translator
 
 Crystyl Translator is a tiny, mobile-first Progressive Web App that helps with casual text-message translation between English and everyday Mexican Spanish. It was built as a personal “love-letter translator” for Crystyl, with automatic language detection, one-tap copying, a blue-and-gold sparkle theme, and a rotating encouragement quote every time the app opens.
 
-Live app: https://crystyl-translator.pplx.app
+Live app: https://crystyl-clear-translator.onrender.com
 
 ## Description
 
@@ -112,7 +103,7 @@ Because this is a static app, no install or build step is required.
 
 ## Installing on iPhone
 
-1. Open https://crystyl-translator.pplx.app in Safari.
+1. Open https://crystyl-clear-translator.onrender.com in Safari.
 2. Tap the iOS **Share** button.
 3. Tap **Add to Home Screen**.
 4. Confirm the name and icon.
@@ -123,20 +114,10 @@ Because this is a static app, no install or build step is required.
 The app is published at:
 
 ```text
-https://crystyl-translator.pplx.app
+https://crystyl-clear-translator.onrender.com
 ```
 
-For a static preview deployment in Perplexity Computer:
-
-```json
-{
-  "project_path": "/home/user/workspace/crystyl-translator",
-  "site_name": "Crystyl Translator",
-  "entry_point": "index.html"
-}
-```
-
-For publishing to a permanent `pplx.app` subdomain, use the same folder as both the project path and static dist path because there is no build output directory.
+Hosting is a [Render](https://render.com) Static Site connected to this GitHub repository. Every push to `main` deploys automatically. There is no build step: the build command is empty and the publish directory is the repository root, because the app is plain static files with no build output directory.
 
 ## Testing checklist
 
