@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4fb26d859d44153696e989e52998367973e920bbdec9aa4ca08439da71b7f28b
-size 1101
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F3D7A"/>
+      <stop offset="1" stop-color="#0F2552"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBEFC8"/>
+      <stop offset="0.55" stop-color="#E8BE5E"/>
+      <stop offset="1" stop-color="#A6822F"/>
+    </linearGradient>
+  </defs>
+  <!-- Maskable: keep critical content within center 80% (safe zone) -->
+  <rect x="0" y="0" width="512" height="512" fill="url(#bg)"/>
+  <g transform="translate(256 256) scale(0.78)">
+    <path d="M 0 -180 L 130 -60 L 0 200 L -130 -60 Z"
+          fill="url(#gold)" stroke="#FBEFC8" stroke-width="6" stroke-linejoin="round"/>
+    <g stroke="#1F3D7A" stroke-width="5" stroke-linejoin="round" fill="none" opacity="0.55">
+      <path d="M -130 -60 L 130 -60"/>
+      <path d="M 0 -180 L 0 200"/>
+      <path d="M -65 -60 L 0 200 L 65 -60"/>
+    </g>
+  </g>
+</svg>
